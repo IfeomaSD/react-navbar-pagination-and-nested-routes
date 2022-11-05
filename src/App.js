@@ -11,7 +11,7 @@ export default function App() {
   <Routes>
     <Route path= '/' element = {<SharedLayout />} />
     <Route index element = {<Home />} >
-<Route path = 'login' element={<Login />} />
+<Route path = 'login' element={<Login setUser= {setUser}></Login>} />
 </Route>
       <Route path = '*' element = {<Error />} />
 </Routes>
